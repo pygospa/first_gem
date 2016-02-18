@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'hola_pygospa'
+puts Hola.hi(ARGV[0])
