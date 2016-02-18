@@ -1,6 +1,7 @@
 Gem::Specification.new do |s|
   s.name          = 'hola_pygospa'
-  s.version       = '0.0.0'
+  s.version       = '0.0.1'
+  s.executables   << 'hola'
   s.date          = '2010-04-28'
   s.summary       = "Holla!"
   s.description   = "A simple hello world gem"
