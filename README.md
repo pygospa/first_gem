@@ -1,3 +1,8 @@
+# First time I have a cool batch
+
+[![Gem
+Version](https://badge.fury.io/rb/hola_pygospa.svg)](https://badge.fury.io/rb/hola_pygospa)
+
 #Results of the 'Howto Gem' Tutorial
 
 1. Create `lib/module.rb`
@@ -54,13 +59,31 @@ $ gem list -r hola_pygospa
 1. Create files under `lib/<module_name>/<file_name>.rb`
 2. Require files in `lib/<module_name>.rb`
 3. For testing:
+
 ```ruby
 irb -Ilib -r<module_name>
 ```
+
 4. Add file to `.gemspec`, so it get's included when installing via gem
 
 
-
 # Adding an executable
+
+1. Create executables under `bin/<executable_name>`
+
+2. Test with `ruby -Ilib ./bin/<executable_name>`
+
+3. Add it to the gemspec via `s.executables << 'hola'`
+
+# Writing Tests
+
+1. Create a `Rakefile` in root to autorun testsuite
+2. Create test classes in `test/test_<file>.rb`
+3. Run tests with `rake test` or just `rake`
+
+
+# Document code
+1. Either use RDoc markdown
+2. Or YARD
 
 
